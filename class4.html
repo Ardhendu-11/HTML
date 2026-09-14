@@ -6,12 +6,86 @@
     <title>class4</title>
 </head>
 <body>
-    <!-- ID -->
+    <!-- ID 
     <h2 id ="Contact">Contact me</h2>
     <p> email: example@example.com</p>
     <a href="#Contact">Go to Contact</a>
 
-    <p title="This is a tooltip">Hover over me to see the tooltip</p>
+    <p title="This is a tooltip">Hover over me to see the tooltip</p> -->
+
+    <!-- forms( Heart of HTML) & user Input  
+    <form>
+        <label for="Username"> Your Name: </label>
+        <input type="text" id="Username" name="Username">
+    </form>
+     always put input inside form tag
+    connects the input with the label using for and id attribute
+    put right type of input for the right data
+    -->
+
+    <form>
+        <button type="button">Sign up</button>
+        <br><br>
+        <label for="Username"> Your Name: </label>
+        <input type="text" id="Username" name="Username" placeholder="Enter your name" required>
+        <br><br>
+        <label for="Email"> Your Email: </label>
+        <input type="email" id="Email" name="Email" placeholder="Enter your email" required>
+        <br><br>
+        <label for="Password"> Your Password: </label>
+        <input type="password" id="Password" name="Password" placeholder="Enter your password" required>
+        <br><br>
+        <label for="Age"> Your Age: </label>
+        <input type="number" id="Age" name="Age" placeholder="Enter your age">
+        <br><br>
+        <label for="DOB"> Your Date of Birth: </label>  
+        <input type="date" id="DOB" name="DOB" placeholder="Enter your date of birth">
+        <br><br>
+        <label for="Color"> Your Favorite Color: </label>
+        <input type="color" id="Color" name="Color" value="#ff0000">
+        <br><br>
+        <label for="resume"> Upload Resume: </label>
+        <input type="file" id="resume" name="resume">
+        <br><br>
+        <label for="Gender"> Your Gender: </label>
+        <input type="radio" id="Male" name="Gender" value="Male">
+        <label for="Male"> Male </label>
+        <input type="radio" id="Female" name="Gender" value="Female">
+        <label for="Female"> Female </label>
+        <input type="radio" id="Other" name="Gender" value="Other">
+        <label for="Other"> Other </label>
+        <br><br>
+        <p> Your Hobbies: </p>
+        <label> <input type="checkbox" id="Reading" name="Hobbies" value="Reading"> <label for="Reading"> Reading </label> </label>
+        <label> <input type="checkbox" id="Writing" name="Hobbies" value="Writing"> <label for="Writing"> Writing </label> </label>
+        <label> <input type="checkbox" id="Coding" name="Hobbies" value="Coding"> <label for="Coding"> Coding </label> </label>
+        <br><br>
+        <button type="submit">Submit</button>
+        <br><br>
+        <button type="reset">Reset</button>
+    </form>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="Username2"> Your Name: </label>
+            <input type="text" id="Username2" name="Username" placeholder="Enter your name" required>
+            <br><br>    
+            <label for="Age2"> Your Age: </label>
+            <input type="range" id="Age2" name="Age" min="0" max="100" value="25">
+            <br><br>
+            <label for="Email2"> Your Email: </label>
+            <input type="email" id="Email2" name="Email" placeholder="Enter your email" required>
+            <br><br>
+            <label for="Password2"> Your Password: </label>
+            <input type="password" id="Password2" name="Password" placeholder="Enter your password" required>
+        </fieldset>
+    </form>
+
+
+
+    
+
 
 
 </body>
